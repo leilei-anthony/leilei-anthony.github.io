@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lester Sityar | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <nav class="nav-links">
+            <a href="#about" class="active">about</a>
+            <a href="#experience">experience</a>
+            <a href="#projects">projects</a>
+            <a href="#papers">papers</a>
+            <a href="#leadership">leadership</a>
+            <a href="#stack">stack</a>
+        </nav>
+    </aside>
+
+    <main>
+        <section id="about">
+            <h2 class="name-header">Lester Anthony Sityar (leilei)</h2>
+            <p class="hero-statement">
+                I am a Graduate Student at De La Salle University. I work on <em>Large Language Models</em> and do research on <strong>Affective Computing</strong>.
+            </p>
+            <p class="sub-statement">
+                BSMS Computer Science, Consistent Dean's Lister with a CGPA of 3.5/4.0. I specialize in Python, Computer Vision, and Large Language Models.
+            </p>
+            <div class="social-footer">
+                <a href="https://github.com/leilei-anthony" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/lester-anthony-jr-sityar-403b78317/" target="_blank">LinkedIn</a>
+                <span class="copy-email" id="email-btn" style="cursor: pointer; text-decoration: underline; text-underline-offset: 4px;">
+                    lesteranthonyjr@gmail.com
+                    <span id="copy-status" style="display: none; font-size: 0.8rem; color: var(--accent); margin-left: 5px; font-style: italic;">(copied!)</span>
+                </span>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="experience">
+            <h2 class="name-header">Experience</h2>
+            <div id="experience-list"></div>
+        </section>
+
+        <hr>
+
+        <section id="projects">
+            <h2 class="name-header">Selected Projects</h2>
+            <div id="project-list"></div>
+        </section>
+
+        <hr>
+
+        <section id="papers">
+            <h2 class="name-header">Papers & Publications</h2>
+            <div id="paper-list"></div>
+        </section>
+
+        <hr>
+
+        <section id="leadership">
+            <h2 class="name-header">Leadership</h2>
+            <div id="leadership-list"></div>
+        </section>
+
+        <hr>
+
+        <section id="stack">
+            <h2 class="name-header">Technical Stack & Skills</h2>
+            <div id="stack-list"></div>
+        </section>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+</body>
+</html>
