@@ -85,6 +85,6 @@ const stack = [
     },
     {
         title: "Interests",
-        desc: "Snoopy, Sabrina Carpenter, Language Learning, Graphic Design, Boxing, Running"
+        desc: "Snoopy, Spider-Man, Sabrina Carpenter, Language Learning, Graphic Design, Boxing, Running"
     }
 ];
