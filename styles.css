@@ -116,20 +116,20 @@ hr {
 
 .item-header {
     display: flex;
-    align-items: center; /* Vertically centers icon with text */
-    gap: 10px;           /* Space between icon and title */
+    align-items: center;
+    gap: 10px;
     margin-bottom: 5px;
 }
 
 .item-link {
-    color: var(--accent); /* #999999 */
+    color: var(--accent);
     transition: color 0.2s;
     display: flex;
-    flex-shrink: 0;      /* Prevents icon from squishing on mobile */
+    flex-shrink: 0;
 }
 
 .item-link:hover {
-    color: var(--text);   /* #333333 */
+    color: var(--text);
 }
 
 .item-link svg {
@@ -137,9 +137,8 @@ hr {
     height: 14px;
 }
 
-/* Ensure h3 margin doesn't interfere with flex centering */
 .item-row h3 {
-    font-size: var(--font-size); /* 0.95rem */
+    font-size: var(--font-size);
     margin: 0;
     font-weight: 600;
 }
