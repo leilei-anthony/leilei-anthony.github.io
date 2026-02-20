@@ -69,7 +69,7 @@ const leadership = [
 const stack = [
     {
         title: "Languages",
-        desc: "English, Filipino, Japanese (N3)"
+        desc: "English, Filipino, Japanese (Intermediate)"
     },
     {
         title: "Technical",
