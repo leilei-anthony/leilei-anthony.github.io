@@ -44,6 +44,8 @@ main {
     margin-left: 200px;
     padding: 80px 60px;
     max-width: 700px;
+    min-width: 0;
+    box-sizing: border-box;
 }
 
 .name-header {
@@ -116,9 +118,26 @@ hr {
 
 .item-header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
     gap: 10px;
     margin-bottom: 5px;
+}
+
+.item-title-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+}
+
+.item-date {
+    flex-shrink: 0;
+    padding-left: 10px;
+    color: var(--accent);
+    font-size: 0.85em;
+    font-style: italic;
+    white-space: nowrap;
 }
 
 .item-link {

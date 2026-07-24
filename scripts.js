@@ -8,17 +8,27 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!container) return;
         
         data.forEach(item => {
-            const linkHTML = item.link 
+            const linkHTML = item.link
                 ? `<a href="${item.link}" target="_blank" class="item-link" title="View Project">
-                     <i data-lucide="external-link"></i>
-                   </a>` 
+                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                         <polyline points="15 3 21 3 21 9"></polyline>
+                         <line x1="10" y1="14" x2="21" y2="3"></line>
+                     </svg>
+                   </a>`
+                : "";
+            const dateHTML = item.date
+                ? `<span class="item-date">${item.date}</span>`
                 : "";
 
             container.innerHTML += `
                 <div class="item-row">
                     <div class="item-header">
-                        ${linkHTML}
-                        <h3>${item.title}</h3>
+                        <div class="item-title-group">
+                            ${linkHTML}
+                            <h3>${item.title}</h3>
+                        </div>
+                        ${dateHTML}
                     </div>
                     <p>${item.desc}</p>
                 </div>`;
@@ -57,8 +67,23 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Initialize Lucide icons if the library is loaded
-    if (window.lucide) {
-        window.lucide.createIcons();
+    /**
+     * Scroll-spy: highlight the nav link for the section currently in view.
+     */
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const sections = document.querySelectorAll('main section[id]');
+
+    if (navLinks.length && sections.length) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
+                    });
+                }
+            });
+        }, { rootMargin: '-40% 0px -55% 0px' });
+
+        sections.forEach(section => observer.observe(section));
     }
 });
