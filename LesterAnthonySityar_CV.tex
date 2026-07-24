@@ -1,0 +1,205 @@
+\documentclass[10.5pt, letterpaper]{article}
+
+% ------------------------- PACKAGES -------------------------
+\usepackage[
+    ignoreheadfoot,
+    top=0.9cm,
+    bottom=0.85cm,
+    left=1.75cm,
+    right=1.75cm,
+    footskip=1cm
+]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% ------------------------- SETUP -------------------------
+\definecolor{linkcolor}{HTML}{000000}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=linkcolor,
+    linkcolor=linkcolor,
+    pdftitle={Lester Anthony Sityar - CV},
+    pdfauthor={Lester Anthony H. Sityar Jr.}
+}
+
+\pagestyle{empty}
+\linespread{0.96}
+\setlength{\parindent}{0pt}
+\raggedbottom
+\raggedright
+
+% Section headings: small caps, bold, full-width rule beneath
+\titleformat{\section}
+    {\large\bfseries\scshape}
+    {}
+    {0em}
+    {}
+    [\vspace{0.1em}\titlerule\vspace{0.2em}]
+\titlespacing*{\section}{0pt}{0.45em}{0.1em}
+
+% Tighten default list spacing
+\setlist[itemize]{
+    itemsep=0.05em,
+    parsep=0em,
+    topsep=0.08em,
+    leftmargin=1.15em
+}
+
+% ------------------------- CUSTOM COMMANDS -------------------------
+% \entry{Organization/Title}{Dates}{Role/Subtitle}
+\newcommand{\entry}[3]{%
+    \par\noindent
+    {\textbf{#1}\hfill\textbf{#2}}\\
+    {\textit{#3}}\par\vspace{0.05em}
+}
+
+% \projectentry{Title}{Category}
+\newcommand{\projectentry}[2]{%
+    \par\noindent
+    {\textbf{#1} \textit{(#2)}}\par\vspace{0.05em}
+}
+
+\begin{document}
+
+% ------------------------- HEADER -------------------------
+\begin{center}
+    {\Large \textbf{SITYAR, LESTER ANTHONY JR. H.}}\\[0.35em]
+    {\small
+        +63-905-736-6482 \textbullet\ San Pedro City, Laguna \textbullet\ \href{mailto:lesteranthonyjr@gmail.com}{lesteranthonyjr@gmail.com}
+    }\\[0.15em]
+    {\small
+        \href{https://github.com/leilei-anthony}{github.com/leilei-anthony} \textbullet\
+        \href{https://linkedin.com/in/lester-anthony-jr-sityar}{linkedin.com/in/lester-anthony-jr-sityar} \textbullet\
+        \href{https://leilei-anthony.github.io}{leilei-anthony.github.io} \textbullet\
+        \href{https://orcid.org/0009-0004-2661-303X}{ORCID: 0009-0004-2661-303X}
+    }\\[0.15em]
+    {\small \textit{Research Interests: Affective Computing, Large Language Models, Machine Learning}}
+\end{center}
+
+% ------------------------- EDUCATION -------------------------
+\section{Education}
+
+\entry{BSMS Computer Science \textbar\ De La Salle University, Manila, Philippines}{2022 -- Present}{}
+\begin{itemize}
+    \item Consistent Dean's Lister \textbar\ CGPA: 3.5 / 4.0
+    \item Relevant Coursework: Large Language Models, Machine Learning, Affective Computing and Multimodal Interactions, Design and Analysis of Algorithms, Advanced Software Engineering, Advanced Database Systems, Statistical Modeling and Simulation
+\end{itemize}
+
+% ------------------------- EXPERIENCE -------------------------
+\section{Experience}
+
+\entry{Nara Institute of Science and Technology (NAIST), HAI Lab}{Jul. 2026 -- Aug. 2026}{Research Intern \textbar\ JST Y-Tec Program}
+\begin{itemize}
+    \item Conducting research on applying Large Language Models (LLMs) to hydrology and Disaster Risk Reduction and Management (DRRM) at the Human-AI Interaction (HAI) Laboratory, as a selected participant in the JST Y-Tec exchange program.
+\end{itemize}
+
+\entry{AILRIC 2026 \textbar\ De La Salle University}{Jun. 2026}{Reviewer \textbar\ AI in Language Research International Conference, Student Research Workshop (SRW)}
+\begin{itemize}
+    \item Reviewed submitted papers for the AILRIC 2026 Student Research Workshop, evaluating research quality and providing feedback to emerging researchers in AI and language technology.
+\end{itemize}
+
+\entry{VISON Technologies Corporation}{Aug. 2025 -- Dec. 2025}{Intern \textbar\ Computer Vision Module Developer}
+\begin{itemize}
+    \item Optimized License Plate Recognition (LPR) modules by implementing Python, OpenCV, and OCR technologies, resulting in an 80\% increase in character detection accuracy and confidence scores.
+    \item Engineered robust image preprocessing pipelines to mitigate environmental noise and lighting variability, significantly improving OCR reliability for vehicle capture.
+\end{itemize}
+
+\entry{TE3D House \textbar\ De La Salle University}{Nov. 2024 -- Present}{Researcher \textbar\ Technology, Education, Entertainment, Empathy, Design (TE3D) House}
+\begin{itemize}
+    \item Developed an emotion recognition pipeline that achieved 89\% accuracy on the DAiSEE dataset using ensemble learning techniques.
+    \item Processed and labeled over 9,000 frames of video data to train a multi-modal affective computing model.
+\end{itemize}
+
+\entry{Philippine Computing Science Congress \textbar\ Computing Society of the Philippines}{2025 -- 2026}{Editor \textbar\ PCSC Conference Proceedings}
+\begin{itemize}
+    \item Systematized the compilation and formatting of accepted research papers using \LaTeX\ for the PCSC 2025 and PCSC 2026 (26th PCSC, Davao City) proceedings, ensuring adherence to rigorous academic publishing standards and metadata consistency.
+    \item Facilitated technical review workflows in collaboration with CSP board members to resolve document compilation errors and finalize manuscripts for publication.
+\end{itemize}
+
+% ------------------------- PAPERS -------------------------
+\section{Papers}
+
+\begin{itemize}[leftmargin=1.1em]
+    \item Sityar, L. A., \& Azcarraga, J. (2026). \textit{When More is Less: A Sensitivity Analysis of Geometric Landmarks, Facial Action Units, and Label Binarization for Affective State Recognition.} Presented at the 21st International Conference on Persuasive Technology (PERSUASIVE 2026), Hakodate, Japan.
+    \item Carandang, M. R., Sityar, L. A., Lopez, D. J., \& Azcarraga, J. (2026). \textit{A Comparative Study of Quantum and Classical Machine Learning for Academic Emotion Recognition.} Accepted at the 2026 IEEE Region 10 Conference (TENCON 2026), Bali, Indonesia.
+    \item Sityar, L. A., \& Guillermo, J. (2025). \textit{Design and Comparison of Agentic and Prompt-Engineered LLM Judges for English-Filipino Translation Evaluation.} De La Salle University.
+    \item Sityar, L. A., \& Carandang, M. R. (2025). \textit{Design and Implementation of a Distributed Web Scraper for Link Extraction.} De La Salle University.
+    \item Sityar, L. A., Alvarez, Y. E., Nu\~nez, J. C., \& Villaver, R. M. (2024). \textit{Predicting Emotions based on Text Input.} De La Salle University.
+    \item Sityar, L. A., Garganera, A. J., Carandang, M. R., \& Nograles, N. R. (2024). \textit{Transaction Management on Steam Game Data: A Distributed Database Approach.} De La Salle University.
+    \item Sityar, L. A., Garganera, A. J., \& del Rosario, J. J. (2024). \textit{Case Study on Multi-Tape Turing Machines.} De La Salle University.
+\end{itemize}
+
+% ------------------------- PROJECTS -------------------------
+\section{Projects}
+
+\projectentry{English-Filipino Translation Evaluation via Agentic LLM-as-a-Judge}{Natural Language Processing}
+\begin{itemize}
+    \item Developed and compared a structured Prompt-Engineered Judge and a multi-step Agentic Judge using a fine-tuned LLaMA-3-8B (4-bit quantized) model.
+    \item Engineered a modular agentic framework featuring a short-term memory store and specialized linguistic tools, including an Idiom Checker and Word Connotation Checker.
+    \item Conducted comparative analysis using Spearman's rank correlation, finding that agentic workflows provide superior qualitative explainability and pragmatic error detection.
+\end{itemize}
+
+\projectentry{Distributed Web Scraper for Link Extraction}{Distributed Systems}
+\begin{itemize}
+    \item Engineered a high-performance Master-Worker distributed architecture using Pyro5 RMI to facilitate Remote Method Invocation across multiple nodes.
+    \item Overcame the Python Global Interpreter Lock (GIL) by implementing true process-level concurrency, achieving a throughput of 3,951 pages in 10 minutes.
+\end{itemize}
+
+\projectentry{Recallify: Spaced-Repetition Learning Platform}{Technical Lead \& Architect}
+\begin{itemize}
+    \item Architected the end-to-end system logic, implementing a custom Spaced-Repetition System (SRS) algorithm to optimize memory retention.
+    \item Led technical mentorship for the development team, conducting code reviews to standardize implementation and ensure architectural integrity.
+    \item Established the project's DevOps infrastructure, including a Git-based CI/CD pipeline and Jest testing suite to ensure high-performance deployment.
+\end{itemize}
+
+\projectentry{Kiku: Primed Listening}{Browser Extension \& Language Learning Tool}
+\begin{itemize}
+    \item Developed and published an open-source Chrome extension for YouTube and Netflix that automates "Primed Listening" by programmatically pausing playback after dialogue.
+    \item Engineered real-time subtitle detection and playback control logic to facilitate language immersion, maintaining a 5-star rating on the Chrome Web Store.
+    \item Implemented a privacy-focused, local-only architecture with customizable hotkeys and dynamic UI elements to optimize user learning workflows.
+\end{itemize}
+
+% ------------------------- LEADERSHIP EXPERIENCE -------------------------
+\section{Leadership Experience}
+
+\entry{QuERST Summer Virtual Tutorial (SVT) \textbar\ De La Salle University}{Apr. 2026 -- May 2026}{Student Volunteer Tutor \textbar\ Mathematics}
+\begin{itemize}
+    \item Tutored an incoming Grade 5 student in daily one-on-one sessions over four weeks, reinforcing Grades 2-4 prerequisite math skills for QuERST's SDG 4 (Quality Education) initiative.
+\end{itemize}
+
+\entry{Society of Proactive Role Models INspiring Total Development \textbar\ De La Salle University}{Aug. 2024 -- Present}{Associate Vice President \textbar\ Creatives Committee}
+\begin{itemize}
+    \item Collaborated with the Executive Board to translate organizational goals into creative strategies while managing multiple high-pressure deadlines concurrently.
+\end{itemize}
+
+\entry{SERVIR under the Office of the Associate Dean in Academics \textbar\ De La Salle University}{Oct. 2023 -- Present}{Student Volunteer \textbar\ Head - Creatives and Communications Committee}
+\begin{itemize}
+    \item Spearheaded marketing for AMPLIFY (150+ delegates) and leads a creatives team supporting 10+ annual academic events.
+\end{itemize}
+
+\entry{Student Discipline Formation Unit Paragons \textbar\ De La Salle University}{Oct. 2023 -- Present}{Student Volunteer \textbar\ Executive - Creatives Committee}
+\begin{itemize}
+    \item Project-managed Advocacy Run initiatives across three external committees and drove a 50\% increase in social media reach.
+\end{itemize}
+
+\entry{Computer Studies Government \textbar\ De La Salle University}{Jul. 2023 -- Jul. 2024}{Student Volunteer \textbar\ Executive - Integrated Marketing Communications}
+\begin{itemize}
+    \item Managed the communications pipeline and visual assets for the 1,000+ member CCS student body.
+\end{itemize}
+
+% ------------------------- SKILLS -------------------------
+\section{Technical Skills \& Interests}
+
+\begin{itemize}[leftmargin=1.1em]
+    \item \textbf{Languages:} English, Filipino, Japanese (Intermediate)
+    \item \textbf{Technical:} Python, Java, SQL, JavaScript, C, C++, Prolog, Go
+    \item \textbf{Machine Learning Technologies:} LLMs, Agentic Frameworks, RAG, Prompt Engineering, PyTorch, Hugging Face Transformers, OpenCV, Scikit-learn, Pandas, NumPy, Sentiment Analysis
+    \item \textbf{Platforms:} Google Colab, Anaconda, Git, Github, Visual Studio Code, Hugging Face, Proxmox, Figma, Adobe Illustrator
+    \item \textbf{Interests:} Language Learning, Graphic Design, Boxing, Running
+\end{itemize}
+
+\end{document}
