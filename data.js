@@ -5,6 +5,11 @@ const experience = [
         date: "Jul. 2026 – Aug. 2026"
     },
     {
+        title: "O-COCOSDA 2026 | Sub-reviewer",
+        desc: "Served as a sub-reviewer for papers submitted to O-COCOSDA 2026, evaluating research on speech databases, speech I/O systems, and assessment.",
+        date: "2026"
+    },
+    {
         title: "AILRIC 2026 | Reviewer, Student Research Workshop",
         desc: "Reviewed submitted papers for the AILRIC 2026 Student Research Workshop, evaluating research quality and providing feedback to emerging researchers in AI and language technology.",
         date: "Jun. 2026"
@@ -50,6 +55,12 @@ const projects = [
 ];
 
 const papers = [
+    {
+        title: "Temporal Sampling Strategies for Engagement Detection (ICCE 2026)",
+        desc: "Temporal Sampling Strategies for Student Engagement Detection. Accepted at the Learning Behavior & AI Agency (LBAA) Joint Workshop, 34th International Conference on Computers in Education (ICCE 2026), Christchurch, New Zealand.",
+        link: "https://open-aied.github.io/LBAA-ICCE2026/",
+        date: "2026"
+    },
     {
         title: "When More is Less (PERSUASIVE 2026)",
         desc: "Sensitivity Analysis of Geometric Landmarks, Facial Action Units, and Label Binarization for Affective State Recognition. Presented at the 21st International Conference on Persuasive Technology (Persuasive 2026), Hakodate, Japan.",
@@ -114,6 +125,6 @@ const stack = [
     },
     {
         title: "Interests",
-        desc: "Snoopy, Spider-Man, Sabrina Carpenter, Language Learning, Graphic Design, Boxing, Running"
+        desc: "Snoopy, Spider-Man, Sabrina Carpenter, Language Learning, Graphic Design, Boxing, Gym"
     }
 ];
